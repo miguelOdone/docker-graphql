@@ -22,8 +22,8 @@ jobs:
       uses: PaulHatch/semantic-version@v4.0.3
       with:
         major_pattern: "major:"
-        minior_patter: "feat:"
-        format: "${major}.${minior}.${patch}.prerelease${increment}"
+        minor_pattern: "feat:"
+        format: "${major}.${minor}.${patch}.prerelease${increment}"
       id: version
       
     - name: Docker login
